@@ -1,0 +1,1 @@
+{"ok":true,"result":[{"update_id":485700286, "message":{"message_id":134,"from":{"id":248107124,"is_bot":false,"first_name":"Ignasi","last_name":"Oliver","username":"ignasioliver","language_code":"en-US"},"chat":{"id":248107124,"first_name":"Ignasi","last_name":"Oliver","username":"ignasioliver","type":"private"},"date":1508010471,"text":"nice"}}]}

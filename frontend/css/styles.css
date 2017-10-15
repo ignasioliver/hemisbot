@@ -1,0 +1,204 @@
+* {
+	font-family: Arial;
+}
+
+body {
+	background: #6495ED;
+	margin: 0px;
+}
+
+header {
+	width:100%;
+	height:150px;
+	background-color: white;
+	transition: opacity 0.5;
+}
+
+header #logo_chatbot {
+	height: 150px;
+	width: 150px;
+}
+
+header nav {
+	display:table;
+	margin:auto;
+}
+
+header nav * {
+	float:left;
+	display:block;
+}
+
+header p{
+	width: 270px;
+	color: grey;
+	font-size: 50px;
+	font-family: Arial;
+
+}
+
+#logo_chatbot {
+	width:150px;
+}
+
+#wrap {
+	width: 100%;
+	height: 100%;
+}
+
+#footer {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	opacity: 0.5;
+}
+
+.button_pair {
+	width:100%;
+	height:200px;
+	margin-bottom: 10px;
+}
+
+.button_pair .button_case {
+	float:left;
+	width:50%;
+}
+
+.button_pair .button_case .button_button {
+	margin:auto;
+	margin-top: 50px;
+	height:70px;
+	width:300px;
+	border:2px solid;
+	border-color:#6495ED;
+}
+
+.button_pair .button_case .button_button:hover {
+	border-color:#ffcc00;
+}
+
+.button_img {
+	position:relative;
+	float:left;
+	height:100%;
+	width: 30%;
+	background-color: #31364A;
+}
+
+.button_img img {
+	position:absolute;
+	margin: auto;
+	top:0;
+	right: 0;
+	bottom:0;
+	left:0;
+	height:60px;
+}
+
+.button_txt {
+	background-color: #fff;
+	display:table;
+	float:left;
+	height: 100%;
+	width: 70%;
+	padding-top: 6px;
+}
+
+.button_button:hover .button_txt {
+	background-color: #6495ED;
+}
+
+.button_txt p {
+	color:#404040;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+.button_button:hover p {
+	color:#ffcc00;
+}
+
+#i_point {
+	width:55px;
+	height:55px;
+}
+
+/*--------------------*/
+
+@media only screen and (max-width: 710px) {
+    header p {
+    	display:none;
+    }
+    #footer {
+		font-size: 10px;
+    }
+    .button_pair .button_case {
+    	width:100%;
+    }
+    .button_pair {
+		height: 25%;
+	}
+}
+
+@media only screen and (max-width:400px) {
+	header {
+		top:0;
+		position:fixed;
+		height: 120px;
+		z-index: 1;
+	}
+
+	#wrap {
+		margin-top:100px;
+	}
+
+	header #logo_chatbot {
+		height: 120px;
+		width: 120px;
+	}
+}
+
+
+/* ------ COMMENT TOOLTIP ------ */
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 87%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    margin-left: auto;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+	content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
